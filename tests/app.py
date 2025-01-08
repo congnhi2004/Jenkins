@@ -11,7 +11,7 @@ def test_check_prime():
     test_cases = [
         (2, True), (3, True), (4, False), (5, True), 
         (10, False), (13, True), (17, True), (19, True), 
-        (20, False), (23, True)
+        (20, False), (15, False)
     ]
     for number, expected in test_cases:
         response = requests.get(f"{BASE_URL}/check_prime/{number}")
